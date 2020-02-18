@@ -1,0 +1,18 @@
+<div ng-controller="SprintoviCtrl">
+	<table class="table table-light table-striped">
+		<thead class="thead-dark">
+			<tr>
+				<th>Id</th>
+				<th>Ime</th>
+				<th>Ukupno bodova</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="s in sprintovi">
+				<td>{{s.id}}</td>
+				<td>{{s.ime}}</td>
+				<td>{{s.ukupnoBodova}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

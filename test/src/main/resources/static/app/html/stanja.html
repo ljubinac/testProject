@@ -1,0 +1,16 @@
+<div ng-controller="StanjaCtrl">
+	<table class="table table-light table-striped">
+		<thead class="thead-dark">
+			<tr>
+				<th>Id</th>
+				<th>Ime</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="s in stanja">
+				<td>{{s.id}}</td>
+				<td>{{s.ime}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

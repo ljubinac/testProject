@@ -1,0 +1,17 @@
+
+
+.table .thead-light th {
+  color: #fff;
+  background-color: grey;
+  border-color: grey;
+}
+
+
+tr:hover {
+	background-color: lightgrey;
+	color: #000;
+}
+
+th, tr {
+	text-align: center;
+}

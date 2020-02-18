@@ -1,0 +1,35 @@
+<div ng-controller="EditZadatakCtrl">
+<form>
+		<div class="form-group">
+			<label for="rtime">Ime</label>
+			<input class="form-control" id="rtime" ng-model="izmeni.ime" />
+		</div>
+		<div class="form-group">
+			<label for="rduration">Zaduzeni</label>
+			<input class="form-control" id="rduration" ng-model="izmeni.zaduzeni"/>
+		</div>
+		<div class="form-group">
+			<label for="rintensity">Bodovi</label>
+			<input class="form-control" id="rintensity" ng-model="izmeni.bodovi"/>
+		</div>
+
+		<div class="form-group">
+			<label for="activity">Stanje</label> <select class="form-control"
+				id="activity" ng-model="z.stanjeId">
+				<option value="1">Nov</option>
+				<option value="2">U toku</option>
+				<option value="3">Zavrsen</option>
+			</select>
+		</div>
+		
+		<div class="form-group">
+			<label for="ractivites">Sprint</label>
+			<select class="form-control" ng-model="izmeni.sprintId" id="ractivities">
+				<option ng-repeat="s in sprintovi" value="{{s.id}}">{{s.ime}}</option>
+			</select>
+		</div>
+		
+		<button class="btn btn-warning" ng-click="doEdit()">Izmeni</button>
+	</form>
+
+</div>
